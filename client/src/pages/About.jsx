@@ -1,4 +1,5 @@
 import { useEffect, useContext } from "react";
+import { Helmet } from "react-helmet-async";
 import HeroSection from "../components/AboutPage/HeroSection";
 import TechSection from "../components/AboutPage/TechSection";
 import AISection from "../components/AboutPage/AISection";
@@ -12,12 +13,26 @@ export default function About() {
   }, [setCurrentPage]);
 
   return (
-    <div className="bg-transparent">
-      <div className="isolate">
-        <HeroSection />
-        <TechSection />
-        <AISection />
+    <>
+      <Helmet>
+        <title>About | Zach of All Trades | Zach of All Trades, LLC</title>
+        <meta
+          name="description"
+          content="The digital landscape is forever
+              changing, and staying at the forefront of emerging trends and
+              technologies is not just a professional obligation—it's a personal
+              passion."
+        />
+        {/* change for production */}
+        <link rel="canonical" href="/" />
+      </Helmet>
+      <div className="bg-transparent">
+        <div className="isolate">
+          <HeroSection />
+          <TechSection />
+          <AISection />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

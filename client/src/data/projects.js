@@ -1,5 +1,5 @@
 import voidWarrior from "../assets/images/void-warrior.webp";
-import blog from "../assets/images/blog.png";
+import blog from "../assets/images/blog.webp";
 import finance from "../assets/images/finance.webp";
 import weather from "../assets/images/weather.webp";
 

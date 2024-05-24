@@ -26,7 +26,6 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await sendMessage(
-      currentPlan,
       firstName,
       lastName,
       email,
