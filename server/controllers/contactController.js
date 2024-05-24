@@ -6,9 +6,7 @@ export const sendEmail = async (req, res) => {
   const { firstName, lastName, email, phoneNumber, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    host: "smtp.mail.yahoo.com",
-    port: 465,
-    secure: true,
+    service: "gmail",
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
@@ -31,9 +29,8 @@ export const sendEmail = async (req, res) => {
 
   try {
     const info = await transporter.sendMail(mailOptions);
-    res.status(200).send("Message sent: " + info.response);
+    res.status(200).json("Message sent: " + info.response);
   } catch (error) {
-    res.status(500).send(error);
-    console.log(error);
+    res.status(500).json(error);
   }
 };

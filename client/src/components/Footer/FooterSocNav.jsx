@@ -8,6 +8,7 @@ export default function FooterSocNav() {
           key={item.name}
           href={item.href}
           className="text-gray-400 hover:text-gray-300"
+          target="_blank"
         >
           <span className="sr-only">{item.name}</span>
           <item.icon className="h-6 w-6" aria-hidden="true" />

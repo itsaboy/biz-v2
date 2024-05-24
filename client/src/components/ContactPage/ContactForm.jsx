@@ -5,6 +5,7 @@ import InputTwo from "../InputTwo";
 import SubmitButton from "../SubmitButton";
 import FeedbackOne from "../FeedbackOne";
 import FeedbackTwo from "../FeedbackTwo";
+import Loading from "../Loading";
 import { useSendMessage } from "../../hooks/useSendMessage";
 
 export default function ContactForm() {
@@ -106,7 +107,7 @@ export default function ContactForm() {
             />
           </div>
         </div>
-        <div className="mt-8 flex justify-end">
+        <div className="mt-8 flex justify-end h-10 w-full">
           {sendSuccess ? (
             <FeedbackOne
               successText={sendSuccess}
@@ -114,14 +115,14 @@ export default function ContactForm() {
             />
           ) : sendError ? (
             <FeedbackTwo errorText={sendError} setSendError={setSendError} />
-          ) : (
+          ) : !sendLoading ? (
             <SubmitButton
               disabled={sendLoading}
               type={"submit"}
               text="Send Message"
               icon={<EnvelopeOpenIcon className="h-6 w-auto" />}
             />
-          )}
+          ) : <Loading />}
         </div>
       </div>
     </form>

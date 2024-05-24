@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import ContactSVG from "../components/ContactPage/ContactSVG";
 import ContactInfo from "../components/ContactPage/ContactInfo";
 import ContactForm from "../components/ContactPage/ContactForm";
-import Loading from "../components/Loading";
 import { NavContext } from "../context/NavContext";
 import { useSendMessage } from "../hooks/useSendMessage.js";
 
@@ -37,7 +36,6 @@ export default function Contact() {
             </div>
           </div>
           <div className="relative">
-            {sendLoading ? <Loading /> : null}
             <ContactForm />
           </div>
         </div>

@@ -2,16 +2,16 @@ import { Outlet } from "react-router-dom";
 import BGAnim from "../components/BGAnim";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-// import FloatingNav from "../components/FloatingNav";
+import FloatingNav from "../components/FloatingNav";
 
 export default function BodyLayout() {
   return (
-    <div className="relative flex flex-col min-h-screen">
+    <div className="relative flex flex-col min-h-screen h-full">
       <BGAnim />
       <Header />
       <main className="relative flex-grow">
         <Outlet />
-        {/* <FloatingNav /> */}
+        <FloatingNav />
       </main>
       <Footer />
     </div>

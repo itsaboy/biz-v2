@@ -2,7 +2,7 @@ import { CheckCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
 
 export default function FeedbackOne({ successText, setSendSuccess }) {
   return (
-    <div className="rounded-md bg-green-200 p-3">
+    <div className="rounded-md bg-green-200 p-2.5">
       <div className="flex">
         <div className="flex-shrink-0">
           <CheckCircleIcon
