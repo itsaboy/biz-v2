@@ -3,7 +3,7 @@ import blog from "../assets/images/blog.png";
 import finance from "../assets/images/finance.webp";
 import weather from "../assets/images/weather.webp";
 
-export const PROJECTS = [
+export const projects = [
   {
     id: 1,
     title: "Void Warrior",

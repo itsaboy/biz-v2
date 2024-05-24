@@ -1,9 +1,8 @@
 export const pricing = [
   {
-    name: "Static Website",
+    name: "Simple Website",
     id: "tier-static",
-    href: "#",
-    priceHourly: "$39",
+    projectPrice: "$500 - $1,500",
     description: null,
     features: [
       "Custom Design",
@@ -16,8 +15,7 @@ export const pricing = [
   {
     name: "Fullstack Web Application",
     id: "tier-backend",
-    href: "#",
-    priceHourly: "$99",
+    projectPrice: "$1,500 - $5,000",
     description: "Includes all features from Tier 1, plus:",
     features: [
       "Custom Backend Development",
