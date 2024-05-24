@@ -1,0 +1,14 @@
+{
+  "name": "zach-of-all-trades",
+  "version": "0.0.0",
+  "main": "node server/server.js",
+  "scripts": {
+    "start": "cd server && npm run start",
+    "watch": "cd server && npm run dev",
+    "dev": "cd client && npm run dev",
+    "build": "cd client && npm run build"
+  },
+  "author": "itsaboy",
+  "license": "ISC",
+  "description": ""
+}

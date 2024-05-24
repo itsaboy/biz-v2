@@ -1,0 +1,17 @@
+.hoverText {
+  transition: 0.35s font-weight, 0.35s color;
+}
+
+.hoverText:hover {
+  color: #60a5fa;
+}
+
+/* To the right */
+.hoverText:hover + .hoverText {
+  color: #93c5fd;
+}
+
+/* To the left */
+.hoverText:has(+ .hoverText:hover) {
+  color: #3b82f6;
+}
