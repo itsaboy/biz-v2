@@ -12,7 +12,7 @@ export default function PricingCustom() {
           journey toward realizing your bespoke web project.
         </p>
       </div>
-      <Link to="/contact" onClick={() => handleClick("Custom")}>
+      <Link to="/contact">
         <ButtonOne
           text={"Contact"}
           icon={<EnvelopeIcon className="h-6 w-auto" />}

@@ -7,7 +7,10 @@ export default function Header() {
 
   return (
     <header className="bg-gray-950 border-b border-gray-600">
-      <DesktopNav setMobileMenuOpen={setMobileMenuOpen} />
+      <DesktopNav
+        mobileMenuOpen={mobileMenuOpen}
+        setMobileMenuOpen={setMobileMenuOpen}
+      />
       <MobileNav
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}

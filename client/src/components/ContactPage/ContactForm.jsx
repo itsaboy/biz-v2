@@ -1,8 +1,7 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { EnvelopeOpenIcon } from "@heroicons/react/24/outline";
 import InputOne from "../InputOne";
 import InputTwo from "../InputTwo";
-import InputThree from "../InputThree";
 import SubmitButton from "../SubmitButton";
 import FeedbackOne from "../FeedbackOne";
 import FeedbackTwo from "../FeedbackTwo";
@@ -54,7 +53,7 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <InputOne
             htmlFor={"first-name"}
-            label={"First Name"}
+            label={"First Name*"}
             type={"text"}
             name={"first-name"}
             id={"first-name"}
@@ -64,7 +63,7 @@ export default function ContactForm() {
           />
           <InputOne
             htmlFor={"last-name"}
-            label={"Last Name"}
+            label={"Last Name*"}
             type={"text"}
             name={"last-name"}
             id={"last-name"}
@@ -75,7 +74,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <InputOne
               htmlFor={"email"}
-              label={"Email"}
+              label={"Email*"}
               type={"email"}
               name={"email"}
               id={"email"}
@@ -87,7 +86,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <InputOne
               htmlFor={"phone-number"}
-              label={"Phone Number"}
+              label={"Phone Number*"}
               type={"tel"}
               name={"phone-number"}
               id={"phone-number"}
@@ -99,7 +98,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <InputTwo
               htmlFor={"message"}
-              label={"Message"}
+              label={"Message*"}
               name={"message"}
               id={"message"}
               state={message}

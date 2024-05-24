@@ -13,7 +13,7 @@ export default function ProjectsCard() {
             <img
               src={post.imageUrl}
               alt={post.alt}
-              className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+              className="aspect-[16/9] w-full rounded-2xl bg-gray-950 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
             />
           </div>
           <div className="max-w-xl">
