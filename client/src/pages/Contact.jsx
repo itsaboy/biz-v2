@@ -4,12 +4,9 @@ import ContactSVG from "../components/ContactPage/ContactSVG";
 import ContactInfo from "../components/ContactPage/ContactInfo";
 import ContactForm from "../components/ContactPage/ContactForm";
 import { NavContext } from "../context/NavContext";
-import { useSendMessage } from "../hooks/useSendMessage.js";
 
 export default function Contact() {
   const { setCurrentPage } = useContext(NavContext);
-
-  const { sendLoading } = useSendMessage();
 
   useEffect(() => {
     setCurrentPage("Contact");
