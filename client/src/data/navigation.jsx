@@ -15,19 +15,19 @@ export const siteNav = [
 ];
 
 export const socMediaNav = [
-  // {
-  //   name: "Facebook",
-  //   href: "#",
-  //   icon: (props) => (
-  //     <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-  //       <path
-  //         fillRule="evenodd"
-  //         d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-  //         clipRule="evenodd"
-  //       />
-  //     </svg>
-  //   ),
-  // },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/zachary-richardson-230937308/",
+    icon: (props) => (
+      <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+        <path
+          fillRule="evenodd"
+          d="M2.4 0C1.1 0 0 1.1 0 2.4V21.6C0 22.9 1.1 24 2.4 24H21.6C22.9 24 24 22.9 24 21.6V2.4C24 1.1 22.9 0 21.6 0H2.4ZM7.2 20.2H3.6V9.6H7.2V20.2ZM5.4 8.1C4.2 8.1 3.2 7.1 3.2 5.9C3.2 4.7 4.2 3.7 5.4 3.7C6.6 3.7 7.6 4.7 7.6 5.9C7.6 7.1 6.6 8.1 5.4 8.1ZM20.2 20.2H16.6V14.5C16.6 13.3 16.6 11.6 15 11.6C13.4 11.6 13.2 12.9 13.2 14.3V20.2H9.6V9.6H13V11.1H13.1C13.8 9.8 15.5 8.6 17.5 8.6C20.3 8.6 20.2 11.2 20.2 13.8V20.2Z"
+          clipRule="evenodd"
+        />
+      </svg>
+    ),
+  },
   {
     name: "Instagram",
     href: "https://www.instagram.com/tsar_sylvilagus/",
