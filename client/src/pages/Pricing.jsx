@@ -1,9 +1,9 @@
 import { useEffect, useContext } from "react";
-import { Helmet } from "react-helmet-async";
 import PricingSVG from "../components/PricingPage/PricingSVG.jsx";
 import PricingGradient from "../components/PricingPage/PricingGradient.jsx";
 import PricingCards from "../components/PricingPage/PricingCards.jsx";
 import PricingCustom from "../components/PricingPage/PricingCustom.jsx";
+import HelmetTags from "../components/HelmetTags";
 import { NavContext } from "../context/NavContext";
 import styles from "../bubble.module.css";
 
@@ -16,17 +16,7 @@ export default function Pricing() {
 
   return (
     <>
-      <Helmet>
-        <title>Pricing | Zach of All Trades | Zach of All Trades, LLC</title>
-        <meta
-          name="description"
-          content="Choosing the right partner for your web development needs is a
-              critical decision, and understanding the investment is a big part
-              of that choice."
-        />
-        {/* change for production */}
-        <link rel="canonical" href="https://zach-of-all-trades.link/pricing" />
-      </Helmet>
+      <HelmetTags />
       <div className="relative isolate overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 pb-96 pt-4 sm:text-center sm:pt-40 lg:px-8">
           <div className="mx-auto max-w-4xl">

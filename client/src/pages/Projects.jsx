@@ -1,7 +1,7 @@
 import { useEffect, useContext } from "react";
-import { Helmet } from "react-helmet-async";
 import ProjectsSVG from "../components/ProjectsPage/ProjectsSVG";
 import ProjectsCard from "../components/ProjectsPage/ProjectsCard";
+import HelmetTags from "../components/HelmetTags";
 import { NavContext } from "../context/NavContext";
 import styles from "../bubble.module.css";
 
@@ -14,16 +14,7 @@ export default function Projects() {
 
   return (
     <>
-      <Helmet>
-        <title>Projects | Zach of All Trades | Zach of All Trades, LLC</title>
-        <meta
-          name="description"
-          content="This portfolio is a curated showcase of ideas brought to life - a
-              blend of creativity, technical prowess, and innovative solutions."
-        />
-        {/* change for production */}
-        <link rel="canonical" href="https://zach-of-all-trades.link/projects" />
-      </Helmet>
+      <HelmetTags />
       <div className="relative isolate py-8 sm:py-40">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">

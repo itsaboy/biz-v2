@@ -1,8 +1,8 @@
 import { useEffect, useContext } from "react";
-import { Helmet } from "react-helmet-async";
 import ContactSVG from "../components/ContactPage/ContactSVG";
 import ContactInfo from "../components/ContactPage/ContactInfo";
 import ContactForm from "../components/ContactPage/ContactForm";
+import HelmetTags from "../components/HelmetTags";
 import { NavContext } from "../context/NavContext";
 
 export default function Contact() {
@@ -14,16 +14,7 @@ export default function Contact() {
 
   return (
     <>
-      <Helmet>
-        <title>Contact | Zach of All Trades | Zach of All Trades, LLC</title>
-        <meta
-          name="description"
-          content="I'm excited to learn about your project and explore how we can
-        collaborate to create something truly amazing."
-        />
-        {/* change for production */}
-        <link rel="canonical" href="https://zach-of-all-trades.link/contact" />
-      </Helmet>
+      <HelmetTags />
       <div className="relative isolate">
         <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
           <ContactSVG />
