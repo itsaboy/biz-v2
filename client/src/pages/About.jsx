@@ -24,7 +24,7 @@ export default function About() {
               passion."
         />
         {/* change for production */}
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://zach-of-all-trades.link/about" />
       </Helmet>
       <div className="bg-transparent">
         <div className="isolate">

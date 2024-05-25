@@ -25,7 +25,7 @@ export default function Pricing() {
               of that choice."
         />
         {/* change for production */}
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://zach-of-all-trades.link/pricing" />
       </Helmet>
       <div className="relative isolate overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 pb-96 pt-4 sm:text-center sm:pt-40 lg:px-8">

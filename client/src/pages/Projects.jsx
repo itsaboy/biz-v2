@@ -22,7 +22,7 @@ export default function Projects() {
               blend of creativity, technical prowess, and innovative solutions."
         />
         {/* change for production */}
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://zach-of-all-trades.link/projects" />
       </Helmet>
       <div className="relative isolate py-8 sm:py-40">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

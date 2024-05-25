@@ -22,7 +22,7 @@ export default function Home() {
             uniquely crafted website that speaks directly to your audience."
         />
         {/* change for production */}
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://zach-of-all-trades.link/" />
       </Helmet>
       <div className="bg-transparent">
         <div className="relative isolate overflow-hidden bg-transparent">

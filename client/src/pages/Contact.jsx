@@ -22,7 +22,7 @@ export default function Contact() {
         collaborate to create something truly amazing."
         />
         {/* change for production */}
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://zach-of-all-trades.link/contact" />
       </Helmet>
       <div className="relative isolate">
         <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
