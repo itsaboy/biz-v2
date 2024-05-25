@@ -8,7 +8,7 @@ import styles from "../../bubble.module.css";
 export default function ContactInfo() {
   return (
     <>
-      <h2 className="mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
+      <h2 className="font-custom mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
         {"Get in touch.".split("").map((child, idx) => (
           <span className={styles.hoverText} key={idx}>
             {child}

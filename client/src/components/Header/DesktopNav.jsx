@@ -38,7 +38,7 @@ export default function DesktopNav({ mobileMenuOpen, setMobileMenuOpen }) {
           <Link
             key={item.name}
             to={item.to}
-            className={`text-sm font-semibold leading-6 text-gray-200 ${currentPage === item.name && "animate-pulse hover:cursor-default underline underline-offset-8"}`}
+            className={`text-sm font-semibold leading-6 text-gray-200 ${currentPage === item.name && "animate-pulse hover:cursor-default underline underline-offset-4"}`}
           >
             {item.name}
           </Link>

@@ -6,7 +6,7 @@ export default function Tech() {
   return (
     <div className="mx-auto mt-2 max-w-7xl sm:px-6 lg:px-8">
       <div className="relative isolate overflow-hidden bg-gray-400/80 px-6 py-24 text-center shadow-xl shadow-blue-400/40 ring-2 ring-gray-900 sm:rounded-3xl sm:px-16">
-        <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-800 sm:text-4xl">
+        <h2 className="font-custom mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-800 sm:text-4xl">
           Technologies
         </h2>
         <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-gray-950">

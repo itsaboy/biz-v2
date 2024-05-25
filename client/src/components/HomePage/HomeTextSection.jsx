@@ -12,10 +12,10 @@ export default function HomeTextSection() {
           <img
             className="h-16 drop-shadow-2xl border-4 rounded-full border-blue-400"
             src={logo}
-            alt="Your Company"
+            alt="Zach of all trades logo"
           />
           <div className="mt-12" />
-          <h2 className="mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
+          <h2 className="font-custom mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
             {"Building digital experiences that resonate."
               .split("")
               .map((child, idx) => (
@@ -38,7 +38,7 @@ export default function HomeTextSection() {
             <a
               href="https://github.com/itsaboy"
               target="_blank"
-              className="text-sm font-semibold leading-6 text-gray-200 hover:text-blue-600"
+              className="text-sm font-semibold leading-6 text-gray-200 hover:text-blue-300"
             >
               View GitHub <span aria-hidden="true">→</span>
             </a>

@@ -9,11 +9,11 @@ export default function AIPictures() {
       <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
           <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-            <h2 className="text-3xl font-bold tracking-tight text-blue-800 sm:text-4xl">
+            <h2 className="font-custom text-3xl font-bold tracking-tight text-blue-800 sm:text-4xl">
               Artificial Intelligence
             </h2>
-            <p className="mt-6 text-xl leading-8 text-blue-200">
-              In the realm of web development, the integration of AI tools and
+            <p className="mt-6 text-base leading-7 text-gray-300">
+              In the realm of web design and development, the integration of AI tools and
               generated images marks a revolutionary shift, heralding a future
               where creativity knows no bounds. This innovative approach not
               only accelerates the design process but also unlocks new avenues
@@ -34,7 +34,7 @@ export default function AIPictures() {
               <img
                 src={img0001}
                 alt="a woman next to a creek in the forest walking away from the camera"
-                className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
+                className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-950 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
               />
             </div>
             <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
@@ -42,21 +42,21 @@ export default function AIPictures() {
                 <img
                   src={img0002}
                   alt="a close-up picture of a glass of tea"
-                  className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
+                  className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-950 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
                 />
               </div>
               <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
                 <img
                   src={img0003}
                   alt="a picture of a rocky beach with rough waves"
-                  className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
+                  className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-950 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
                 />
               </div>
               <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
                 <img
                   src={img0004}
                   alt="a close-up picture of a plate with steak and potatoes"
-                  className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
+                  className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-950 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
                 />
               </div>
             </div>

@@ -24,11 +24,11 @@ export default function Projects() {
         {/* change for production */}
         <link rel="canonical" href="/" />
       </Helmet>
-      <div className="relative isolate py-24 sm:py-40">
+      <div className="relative isolate py-8 sm:py-40">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="mx-auto max-w-2xl sm:text-center">
             <ProjectsSVG />
-            <h2 className="mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
+            <h2 className="font-custom mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
               {"Personal Projects".split("").map((child, idx) => (
                 <span className={styles.hoverText} key={idx}>
                   {child}

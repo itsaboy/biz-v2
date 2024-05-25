@@ -4,11 +4,11 @@ import img0005 from "../../assets/images/img0005.webp";
 
 export default function Hero() {
   return (
-    <div className="relative isolate -z-10 overflow-hidden bg-transparent pt-0 md:pt-14">
+    <div className="relative isolate -z-10 overflow-hidden bg-transparent py-8 sm:py-40">
       <AboutSVG />
       <div className="mx-auto max-w-7xl px-6 py-12 sm:py-40 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-          <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl lg:col-span-2 xl:col-auto hover:cursor-default">
+          <h1 className="font-custom max-w-2xl text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl lg:col-span-2 xl:col-auto hover:cursor-default">
             {"We can create web solutions that not only stand out but also stand the test of time."
               .split("")
               .map((child, idx) => (

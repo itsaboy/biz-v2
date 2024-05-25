@@ -11,7 +11,7 @@ export default function HomeCodeSection() {
 
   return (
     <div className="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
-      <div className="shadow-lg shadow-blue-400/40 ring-2 ring-gray-900 md:rounded-3xl">
+      <div className="shadow-lg shadow-blue-400/40 ring-2 ring-gray-600 md:rounded-3xl">
         <div className="bg-blue-800 [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
           <div
             className="absolute -inset-y-px left-1/2 -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-blue-200 opacity-20 ring-1 ring-inset ring-white md:ml-20 lg:ml-36"

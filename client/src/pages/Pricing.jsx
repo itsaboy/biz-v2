@@ -28,10 +28,10 @@ export default function Pricing() {
         <link rel="canonical" href="/" />
       </Helmet>
       <div className="relative isolate overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-40 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 pb-96 pt-4 sm:text-center sm:pt-40 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <PricingSVG />
-            <h2 className="mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
+            <h2 className="font-custom mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
               {"The right price for you.".split("").map((child, idx) => (
                 <span className={styles.hoverText} key={idx}>
                   {child}
