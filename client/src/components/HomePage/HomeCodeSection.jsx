@@ -10,7 +10,7 @@ export default function HomeCodeSection() {
   };
 
   return (
-    <div className="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
+    <div className="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen pb-16">
       <div className="shadow-lg shadow-blue-400/40 ring-2 ring-gray-600 md:rounded-3xl">
         <div className="bg-blue-800 [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
           <div
