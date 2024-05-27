@@ -8,7 +8,7 @@ export default function BodyLayout() {
   return (
     <div className="relative flex flex-col min-h-screen h-full">
       <div
-        className="absolute inset-0 bg-no-repeat bg-cover bg-fixed -z-10 min-h-svh"
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center bg-fixed -z-10 min-h-svh"
         style={{
           backgroundImage: `url("${background}")`,
         }}
