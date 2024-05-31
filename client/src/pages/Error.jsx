@@ -1,8 +1,16 @@
+import { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { HomeIcon } from "@heroicons/react/24/outline";
 import ButtonOne from "../components/ButtonOne";
+import { NavContext } from "../context/NavContext";
 
 export default function Error() {
+  const { setCurrentPage } = useContext(NavContext);
+
+  useEffect(() => {
+    setCurrentPage("Error");
+  }, [setCurrentPage]);
+
   return (
     <div className="h-full flex flex-col pt-40 sm:pt-64">
       <div className="text-center">

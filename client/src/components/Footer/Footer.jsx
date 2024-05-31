@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import FooterSiteNav from "./FooterSiteNav";
 import FooterSocNav from "./FooterSocNav";
 import dayjs from "dayjs";
@@ -11,6 +12,11 @@ export default function Footer() {
         <p className="mt-10 text-center text-xs leading-5 text-gray-300">
           &copy; {dayjs().format("YYYY")} Zach of All Trades, LLC. All rights
           reserved.
+        </p>
+        <p className="mt-2 text-center text-sm font-semibold leading-5">
+          <Link to="/privacy" className=" text-blue-400 hover:text-blue-500">
+            Privacy Policy
+          </Link>
         </p>
       </div>
     </footer>

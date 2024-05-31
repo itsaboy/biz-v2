@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/Privacy";
 import Error from "./pages/Error";
 import { NavContextProvider } from "./context/NavContext";
 
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route index path="/projects" element={<Projects />} />,
       <Route index path="/pricing" element={<Pricing />} />,
       <Route index path="/contact" element={<Contact />} />,
+      <Route index path="/privacy" element={<PrivacyPolicy />} />,
       <Route path="*" element={<Error />} />,
     </Route>,
   ])
