@@ -15,7 +15,7 @@ export default function HelmetTags() {
             content="From concept to creation, your vision is the blueprint for a
             uniquely crafted website that speaks directly to your audience."
           />
-          <link rel="canonical" href="https://zach-of-all-trades.link/" />
+          <link rel="canonical" href="https://zach-of-all-trades.io/" />
         </>
       ) : currentPage === "About" ? (
         <>
@@ -27,7 +27,7 @@ export default function HelmetTags() {
             technologies is not just a professional obligation—it's a personal
             passion."
           />
-          <link rel="canonical" href="https://zach-of-all-trades.link/about" />
+          <link rel="canonical" href="https://zach-of-all-trades.io/about" />
         </>
       ) : currentPage === "Projects" ? (
         <>
@@ -39,7 +39,7 @@ export default function HelmetTags() {
           />
           <link
             rel="canonical"
-            href="https://zach-of-all-trades.link/projects"
+            href="https://zach-of-all-trades.io/projects"
           />
         </>
       ) : currentPage === "Pricing" ? (
@@ -53,7 +53,7 @@ export default function HelmetTags() {
           />
           <link
             rel="canonical"
-            href="https://zach-of-all-trades.link/pricing"
+            href="https://zach-of-all-trades.io/pricing"
           />
         </>
       ) : currentPage === "Contact" ? (
@@ -66,7 +66,7 @@ export default function HelmetTags() {
           />
           <link
             rel="canonical"
-            href="https://zach-of-all-trades.link/contact"
+            href="https://zach-of-all-trades.io/contact"
           />
         </>
       ) : null}
