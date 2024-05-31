@@ -1,10 +1,10 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
-import { pricing } from "../../data/pricing.js";
+import { maintain } from "../../data/maintain.js";
 
-export default function PricingPlanCards() {
+export default function MaintainCards() {
   return (
     <>
-      {pricing.map((tier) => (
+      {maintain.map((tier) => (
         <div
           key={tier.id}
           className="flex flex-col justify-between rounded-3xl bg-gray-900 p-8 sm:p-10 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
@@ -19,6 +19,9 @@ export default function PricingPlanCards() {
             <div className="mt-4 flex items-baseline gap-x-2">
               <span className="text-5xl font-bold tracking-tight text-gray-200">
                 {tier.projectPrice}
+                <span className="pl-2 text-base tracking-wide font-semibold leading-7 text-gray-400">
+                  /mo
+                </span>
               </span>
             </div>
             <p className="mt-6 text-semibold leading-7 text-gray-400">
