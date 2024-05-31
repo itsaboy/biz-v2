@@ -2,6 +2,8 @@ import { useState } from "react";
 import { EnvelopeOpenIcon } from "@heroicons/react/24/outline";
 import InputOne from "../InputOne";
 import InputTwo from "../InputTwo";
+import InputThree from "../InputThree";
+import InputFour from "../InputFour";
 import SubmitButton from "../SubmitButton";
 import FeedbackOne from "../FeedbackOne";
 import FeedbackTwo from "../FeedbackTwo";
@@ -13,6 +15,8 @@ export default function ContactForm() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [initialBudget, setInitialBudget] = useState("Unsure");
+  const [monthlyBudget, setMonthlyBudget] = useState("Unsure");
   const [message, setMessage] = useState("");
 
   const {
@@ -31,6 +35,8 @@ export default function ContactForm() {
       lastName,
       email,
       phoneNumber,
+      initialBudget,
+      monthlyBudget,
       message
     );
     if (sendSuccess) {
@@ -38,6 +44,8 @@ export default function ContactForm() {
       setLastName("");
       setEmail("");
       setPhoneNumber("");
+      setInitialBudget("Unsure");
+      setMonthlyBudget("Unsure");
       setMessage("");
     } else {
       return;
@@ -47,7 +55,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+      className="mt-2 px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
     >
       <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -71,30 +79,29 @@ export default function ContactForm() {
             state={lastName}
             setState={setLastName}
           />
-          <div className="sm:col-span-2">
-            <InputOne
-              htmlFor={"email"}
-              label={"Email*"}
-              type={"email"}
-              name={"email"}
-              id={"email"}
-              autoComplete={"email"}
-              state={email}
-              setState={setEmail}
-            />
-          </div>
-          <div className="sm:col-span-2">
-            <InputOne
-              htmlFor={"phone-number"}
-              label={"Phone Number*"}
-              type={"tel"}
-              name={"phone-number"}
-              id={"phone-number"}
-              autoComplete={"tel"}
-              state={phoneNumber}
-              setState={setPhoneNumber}
-            />
-          </div>
+          <InputOne
+            htmlFor={"email"}
+            label={"Email*"}
+            type={"email"}
+            name={"email"}
+            id={"email"}
+            autoComplete={"email"}
+            state={email}
+            setState={setEmail}
+          />
+          <InputOne
+            htmlFor={"phone-number"}
+            label={"Phone Number*"}
+            type={"tel"}
+            name={"phone-number"}
+            id={"phone-number"}
+            autoComplete={"tel"}
+            state={phoneNumber}
+            setState={setPhoneNumber}
+          />
+
+          <InputFour budget={initialBudget} setBudget={setInitialBudget} />
+          <InputThree budget={monthlyBudget} setBudget={setMonthlyBudget} />
           <div className="sm:col-span-2">
             <InputTwo
               htmlFor={"message"}
@@ -122,7 +129,9 @@ export default function ContactForm() {
               text="Send Message"
               icon={<EnvelopeOpenIcon className="h-6 w-auto" />}
             />
-          ) : <Loading />}
+          ) : (
+            <Loading />
+          )}
         </div>
       </div>
     </form>

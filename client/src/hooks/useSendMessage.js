@@ -10,6 +10,8 @@ export const useSendMessage = () => {
     lastName,
     email,
     phoneNumber,
+    initialBudget,
+    monthlyBudget,
     message
   ) => {
     setSendLoading(true);
@@ -26,6 +28,8 @@ export const useSendMessage = () => {
         lastName: lastName,
         email: email,
         phoneNumber: phoneNumber,
+        initialBudget: initialBudget,
+        monthlyBudget: monthlyBudget,
         message: message,
       }),
     });

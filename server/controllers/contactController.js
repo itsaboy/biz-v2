@@ -3,7 +3,15 @@ dotenv.config({ path: "server/.env" });
 import nodemailer from "nodemailer";
 
 export const sendEmail = async (req, res) => {
-  const { firstName, lastName, email, phoneNumber, message } = req.body;
+  const {
+    firstName,
+    lastName,
+    email,
+    phoneNumber,
+    initialBudget,
+    monthlyBudget,
+    message,
+  } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -21,6 +29,10 @@ export const sendEmail = async (req, res) => {
       You have received a new message from ${firstName} ${lastName} (${email}):
       
       Phone Number: ${phoneNumber}
+
+      Initial Budget: ${initialBudget}
+
+      Monthly Budget: ${monthlyBudget}
       
       Message:
       ${message}
