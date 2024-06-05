@@ -17,7 +17,7 @@ export default function MaintainCards() {
               {tier.name}
             </h3>
             <div className="mt-4 flex items-baseline gap-x-2">
-              <span className="text-5xl font-bold tracking-tight text-gray-200">
+              <span className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-200">
                 {tier.projectPrice}
                 <span className="pl-2 text-base tracking-wide font-semibold leading-7 text-gray-400">
                   /mo

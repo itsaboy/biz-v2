@@ -9,7 +9,6 @@ export const pricing = [
       "SEO Optimization",
       "Performance Optimization",
       "Security Best Practices",
-      "Technical Support",
     ],
   },
   {
@@ -23,7 +22,6 @@ export const pricing = [
       "API Development",
       "User Authentication",
       "Advanced SEO Optimization",
-      "Ongoing Maintenance",
       "Scalability Planning",
     ],
   },

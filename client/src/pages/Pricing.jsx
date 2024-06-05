@@ -3,7 +3,6 @@ import PricingSVG from "../components/PricingPage/PricingSVG.jsx";
 import PricingGradient from "../components/PricingPage/PricingGradient.jsx";
 import PricingCards from "../components/PricingPage/PricingCards.jsx";
 import MaintainCards from "../components/PricingPage/MaintainCards.jsx";
-import DevOpsCards from "../components/PricingPage/DevOpsCards.jsx";
 import PricingCustom from "../components/PricingPage/PricingCustom.jsx";
 import HelmetTags from "../components/HelmetTags";
 import { NavContext } from "../context/NavContext";
@@ -54,10 +53,6 @@ export default function Pricing() {
                   Maintenance Cost:
                 </h2>
                 <MaintainCards />
-                <h2 className="mt-4 pb-2 text-center text-2xl font-bold tracking-tight text-blue-200 sm:text-4xl lg:col-span-2">
-                  DevOps Cost:
-                </h2>
-                <DevOpsCards />
                 <PricingCustom />
               </div>
             </div>
