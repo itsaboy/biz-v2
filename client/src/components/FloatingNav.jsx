@@ -11,8 +11,17 @@ export default function FloatingNav() {
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector("header");
+      const footer = document.querySelector("footer");
       const headerHeight = header ? header.offsetHeight : 0;
-      if (window.scrollY > headerHeight) {
+      const footerHeight = footer ? footer.offsetHeight : 0;
+      const footerOffsetTop = footer
+        ? footer.offsetTop
+        : document.body.scrollHeight;
+
+      if (
+        window.scrollY > headerHeight &&
+        window.scrollY + window.innerHeight < footerOffsetTop
+      ) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -33,9 +42,9 @@ export default function FloatingNav() {
     <>
       {currentPage === "Error" || currentPage === "Privacy" ? null : (
         <nav
-          className={`bg-gray-50 text-gray-950 shadow-lg flex items-center justify-evenly py-4 sm:rounded-lg bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border-b sm:border border-blue-950 ${
+          className={`bg-gray-50 text-gray-950 shadow-lg flex items-center justify-evenly py-4 sm:rounded-lg bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border-t sm:border border-blue-950 ${
             isSticky
-              ? "fixed top-0 sm:top-4 left-1/2 transform -translate-x-1/2 z-50 sm:px-4 w-full sm:w-auto"
+              ? "fixed bottom-0 sm:bottom-4 left-1/2 transform -translate-x-1/2 z-50 sm:px-4 w-full sm:w-auto"
               : "hidden"
           }`}
         >
