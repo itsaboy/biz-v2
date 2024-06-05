@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-950">
+    <footer className="bg-gradient-to-b from-gray-950 to-gray-900">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:py-12 lg:px-8">
         <FooterSiteNav />
         <FooterSocNav />
