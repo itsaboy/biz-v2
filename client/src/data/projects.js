@@ -24,7 +24,7 @@ export const projects = [
   {
     id: 3,
     title: "Asset Atlus",
-    href: "https://assetatlus.com//",
+    href: "https://assetatlus.com/",
     description:
       "A simple finance app with calculators, form lookups, and customizable watchlists.",
     imageUrl: finance,
