@@ -22,7 +22,7 @@ export default function Pricing() {
         <div className="mx-auto max-w-7xl px-6 pb-96 pt-4 sm:text-center sm:pt-40 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <PricingSVG />
-            <h2 className="font-custom mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
+            <h2 className="font-custom mt-10 text-4xl font-bold tracking-tight text-indigo-200 sm:text-6xl hover:cursor-default">
               {"The right price for you.".split("").map((child, idx) => (
                 <span className={styles.hoverText} key={idx}>
                   {child}
@@ -31,7 +31,7 @@ export default function Pricing() {
             </h2>
           </div>
           <div className="relative mt-6">
-            <p className="mx-auto max-w-2xl text-lg leading-8 text-gray-200">
+            <p className="mx-auto max-w-2xl text-lg leading-8 text-slate-200">
               Choosing the right partner for your web development needs is a
               critical decision, and understanding the investment is a big part
               of that choice. This pricing structure is designed to be clear,
@@ -45,11 +45,11 @@ export default function Pricing() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div></div>
               <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2">
-                <h2 className="mt-4 pb-2 text-center text-2xl font-bold tracking-tight text-blue-200 sm:text-4xl lg:col-span-2">
+                <h2 className="mt-4 pb-2 text-center text-2xl font-bold tracking-tight text-indigo-200 sm:text-4xl lg:col-span-2">
                   Development Cost:
                 </h2>
                 <PricingCards />
-                <h2 className="mt-4 pb-2 text-center text-2xl font-bold tracking-tight text-blue-200 sm:text-4xl lg:col-span-2">
+                <h2 className="mt-4 pb-2 text-center text-2xl font-bold tracking-tight text-indigo-200 sm:text-4xl lg:col-span-2">
                   Maintenance Cost:
                 </h2>
                 <MaintainCards />

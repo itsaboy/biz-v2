@@ -42,7 +42,7 @@ export default function FloatingNav() {
     <>
       {currentPage === "Error" || currentPage === "Privacy" ? null : (
         <nav
-          className={`bg-gray-50 text-gray-950 shadow-lg flex items-center justify-evenly py-4 sm:rounded-lg bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border-t sm:border border-blue-950 ${
+          className={`bg-slate-50 text-slate-950 shadow-lg flex items-center justify-evenly py-4 sm:rounded-lg bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border-t sm:border border-indigo-950 ${
             isSticky
               ? "fixed bottom-0 sm:bottom-4 left-1/2 transform -translate-x-1/2 z-50 sm:px-4 w-full sm:w-auto"
               : "hidden"
@@ -54,7 +54,7 @@ export default function FloatingNav() {
                 key={link.name}
                 to={link.to}
                 onClick={(event) => handleClick(event, link.to)}
-                className={`text-xs sm:text-sm w-12 hover:text-blue-600 transition-colors flex flex-col gap-1 items-center ${
+                className={`text-xs sm:text-sm w-12 hover:text-indigo-600 transition-colors flex flex-col gap-1 items-center ${
                   currentPage === link.name && "hidden"
                 }`}
               >

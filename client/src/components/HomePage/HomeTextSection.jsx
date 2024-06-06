@@ -10,12 +10,12 @@ export default function HomeTextSection() {
       <div className="mx-auto max-w-2xl">
         <div className="max-w-lg">
           <img
-            className="h-16 drop-shadow-2xl border-4 rounded-full border-blue-400"
+            className="h-16 drop-shadow-2xl border-4 rounded-full border-indigo-400"
             src={logo}
             alt="Zach of all trades logo"
           />
           <div className="mt-12" />
-          <h2 className="font-custom mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
+          <h2 className="font-custom mt-10 text-4xl font-bold tracking-tight text-indigo-200 sm:text-6xl hover:cursor-default">
             {"Building digital experiences that resonate."
               .split("")
               .map((child, idx) => (
@@ -24,7 +24,7 @@ export default function HomeTextSection() {
                 </span>
               ))}
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
+          <p className="mt-6 text-lg leading-8 text-slate-300">
             From concept to creation, your vision is the blueprint for a
             uniquely crafted website that speaks directly to your audience.
           </p>
@@ -38,7 +38,7 @@ export default function HomeTextSection() {
             <a
               href="https://github.com/itsaboy"
               target="_blank"
-              className="text-sm font-semibold leading-6 text-gray-200 hover:text-blue-300"
+              className="text-sm font-semibold leading-6 text-slate-200 hover:text-indigo-300"
             >
               View GitHub <span aria-hidden="true">→</span>
             </a>

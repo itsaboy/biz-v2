@@ -19,14 +19,14 @@ export default function Projects() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
             <ProjectsSVG />
-            <h2 className="font-custom mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
+            <h2 className="font-custom mt-10 text-4xl font-bold tracking-tight text-indigo-200 sm:text-6xl hover:cursor-default">
               {"Personal Projects".split("").map((child, idx) => (
                 <span className={styles.hoverText} key={idx}>
                   {child}
                 </span>
               ))}
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-200">
+            <p className="mt-6 text-lg leading-8 text-slate-200">
               This portfolio is a curated showcase of ideas brought to life - a
               blend of creativity, technical prowess, and innovative solutions.
             </p>

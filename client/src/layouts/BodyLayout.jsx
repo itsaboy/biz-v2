@@ -17,7 +17,7 @@ export default function BodyLayout() {
         />
         <Outlet />
         <FloatingNav />
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-8 bg-gradient-to-t from-gray-950 sm:h-12" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-8 bg-gradient-to-t from-slate-900 sm:h-12" />
       </main>
       <Footer />
     </div>

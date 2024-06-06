@@ -26,7 +26,7 @@ export default function DesktopNav({ mobileMenuOpen, setMobileMenuOpen }) {
       <div className="flex lg:hidden">
         <button
           type="button"
-          className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
+          className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-200"
           onClick={() => setMobileMenuOpen(true)}
         >
           <span className="sr-only">Open main menu</span>
@@ -38,7 +38,7 @@ export default function DesktopNav({ mobileMenuOpen, setMobileMenuOpen }) {
           <Link
             key={item.name}
             to={item.to}
-            className={`text-sm font-semibold leading-6 text-gray-200 ${currentPage === item.name && "animate-pulse hover:cursor-default underline underline-offset-4"}`}
+            className={`text-sm font-semibold leading-6 text-slate-200 ${currentPage === item.name && "animate-pulse hover:cursor-default underline underline-offset-4"}`}
           >
             {item.name}
           </Link>

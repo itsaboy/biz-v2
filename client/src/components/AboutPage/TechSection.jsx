@@ -5,11 +5,11 @@ import { scrollVariants } from "../../data/animations.js";
 export default function Tech() {
   return (
     <div className="mx-auto mt-2 max-w-7xl sm:px-6 lg:px-8">
-      <div className="relative isolate overflow-hidden bg-gray-400/80 px-6 py-24 text-center shadow-xl shadow-blue-400/40 ring-2 ring-gray-900 sm:rounded-3xl sm:px-16">
-        <h2 className="font-custom mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-800 sm:text-4xl">
+      <div className="relative isolate overflow-hidden bg-slate-400/80 px-6 py-24 text-center shadow-xl shadow-indigo-400/40 ring-2 ring-slate-900 sm:rounded-3xl sm:px-16">
+        <h2 className="font-custom mx-auto max-w-2xl text-3xl font-bold tracking-tight text-indigo-800 sm:text-4xl">
           Technologies
         </h2>
-        <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-gray-950">
+        <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-slate-950">
           In an ever-evolving digital landscape, staying ahead with the latest
           and most efficient technologies is paramount. My toolkit includes a
           versatile array of programming languages, frameworks, and tools
@@ -36,7 +36,7 @@ export default function Tech() {
           aria-hidden="true"
         >
           <div
-            className="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-blue-800 to-blue-900 opacity-25"
+            className="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-indigo-800 to-indigo-900 opacity-25"
             style={{
               clipPath:
                 "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",

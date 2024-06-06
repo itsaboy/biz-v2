@@ -1,7 +1,7 @@
 export default function HomeSVG() {
   return (
     <svg
-      className="absolute inset-0 -z-10 h-full w-full stroke-gray-600 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+      className="absolute inset-0 -z-10 h-full w-full stroke-slate-600 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
       aria-hidden="true"
     >
       <defs>

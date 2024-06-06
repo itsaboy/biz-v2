@@ -11,7 +11,7 @@ export default function FooterSiteNav() {
         <div key={item.name} className="pb-6">
           <Link
             to={item.to}
-            className="text-sm leading-6 text-gray-400 hover:text-gray-300"
+            className="text-sm leading-6 text-slate-400 hover:text-slate-300"
           >
             {item.name}
           </Link>
