@@ -53,7 +53,7 @@ export default function ContactInfo() {
           </dt>
           <dd>
             <a className="text-slate-400" href="mailto:hello@example.com">
-              ultimategauntletdev@gmail.com
+              zachofalltradesio@gmail.com
             </a>
           </dd>
         </div>

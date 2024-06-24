@@ -1,7 +1,5 @@
 import { useEffect, useContext } from "react";
-import {
-  CheckCircleIcon,
-} from "@heroicons/react/20/solid";
+import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import { NavContext } from "../context/NavContext";
 
 export default function PrivacyPolicy() {
@@ -154,10 +152,10 @@ export default function PrivacyPolicy() {
           <p className="text-slate-400 mb-4 font-semibold">
             Email:{" "}
             <a
-              href="mailto:ultimategauntletdev@gmail.com"
+              href="mailto:zachofalltradesio@gmail.com"
               className="text-indigo-300 font-normal hover:text-indigo-400"
             >
-              ultimategauntletdev@gmail.com
+              zachofalltradesio@gmail.com
             </a>
             <br />
             Phone:{" "}
